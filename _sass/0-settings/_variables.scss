@@ -11,10 +11,10 @@ $global-transition: all .2s;
 // *****************
 // Color Variables
 // *****************
-$brand-color: #ff7b7b;
-$dark: #09080f;
-$blue-dark: #17151E;
-$gray: #aaa;
+$brand-color: #8850b1;
+$dark: #2e2d2d;
+$blue-dark: #22182a;
+$gray: #5c5b5b;
 $light-gray: #eee;
 $white: #fff;
 
@@ -22,8 +22,8 @@ $white: #fff;
 $text-color: $light-gray;
 
 // Background Colors
-$background-color: #0f0e15; // Fallback color
-$background-image: url('/images/background.jpg'); // Background image path
+$background-color: #2e2d2d; // Fallback color
+$background-image: url('/images/background.png'); // Background image path
 
 // Callouts Colors
 $callout-note: #0a69da;
