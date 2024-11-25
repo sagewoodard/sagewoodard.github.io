@@ -1,9 +1,11 @@
 /* Header */
 .header {
   width: 100%;
-  margin: 60px 0;
+  padding: 20px 40px; /* Add padding for better spacing */
+  margin: 0 auto; /* Center the header */
   transition: $global-transition;
   color: $white;
+  background: rgba(0, 0, 0, 0.8); /* Optional: Add semi-transparent background for visibility */
 
   &.header--top {
     position: absolute;
@@ -12,40 +14,49 @@
   }
 
   @media (max-width: $desktop) {
-    margin: 32px 0;
+    padding: 15px 20px;
   }
 }
 
 .header__inner {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Space out logo and navigation */
   align-items: center;
   flex-wrap: wrap;
+  gap: 20px; /* Add spacing between elements */
 }
 
 /* Logo */
 .logo__link {
   font-family: $heading-font-family;
-  font-size: 28px;
+  font-size: 24px; /* Adjust font size for better proportions */
   line-height: 1;
   font-weight: 900;
   vertical-align: middle;
   color: $text-color;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
+  display: flex; /* Align the logo and text horizontally */
+  align-items: center;
+  gap: 10px; /* Space between logo and text */
+
   &:hover {
     color: $brand-color;
   }
-}
 
-.logo__image {
-  max-height: 40px;
+  img {
+    max-height: 40px; /* Adjust the logo size */
+    width: auto;
+  }
 }
 
 /* Nav */
 .main-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Add spacing between navigation items */
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
@@ -54,9 +65,8 @@
 .main-nav__box {
   display: flex;
   align-items: center;
-  width: 80%;
-  padding-top: 200px;
-  margin: 0 auto;
+  justify-content: space-between; /* Space out nav items */
+  width: 100%;
 
   .nav__icon-close {
     position: absolute;
@@ -80,8 +90,6 @@
   }
 
   @media (max-width: $tablet) {
-    padding-top: 100px;
-
     .nav__icon-close {
       top: 22px;
       right: 42px;
@@ -89,6 +97,7 @@
   }
 
   @media (max-width: $mobile) {
+    flex-direction: column; /* Stack nav items on smaller screens */
     width: 90%;
   }
 }
@@ -96,22 +105,19 @@
 .navigation {
   display: flex;
   align-items: center;
+  gap: 15px; /* Add spacing between nav links */
 }
 
 .top-nav {
   .nav__list {
-    .nav__item {
-      display: inline-block;
-      margin-right: 40px;
-      &:last-child {
-        margin-right: 0;
-      }
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Spacing between items */
 
+    .nav__item {
       .nav__link {
-        position: relative;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 700;
-        letter-spacing: 1px;
         text-transform: uppercase;
         text-decoration: none;
         color: $text-color;
@@ -129,17 +135,12 @@
 
 .mobile-nav {
   .nav__list {
-
     .nav__item {
       display: block;
-      margin-bottom: 36px;
+      margin-bottom: 20px;
       text-align: center;
-      &:last-child {
-        margin-bottom: 0;
-      }
 
       .nav__link {
-        position: relative;
         font-size: 18px;
         font-weight: 700;
         letter-spacing: 1px;
@@ -149,10 +150,6 @@
           color: $brand-color;
         }
       }
-
-      @media (max-width: $mobile) {
-        margin-bottom: 28px;
-      }
     }
   }
 }
@@ -160,7 +157,8 @@
 .nav-buttons {
   display: flex;
   align-items: center;
-  font-size: 24px;
+  gap: 20px; /* Add spacing between buttons */
+  font-size: 18px;
   color: $text-color;
 
   .search-button {
@@ -185,25 +183,11 @@
       margin-left: 8px;
       font-size: 12px;
       font-weight: 700;
-      letter-spacing: 1px;
       text-transform: uppercase;
       @media (max-width: $desktop) {
         display: none;
       }
     }
-  }
-
-  .nav__icon-menu {
-    display: none;
-    margin-right: 16px;
-    font-size: 18px;
-    @media (max-width: $desktop) {
-      display: block;
-    }
-  }
-
-  .nav__icon {
-    cursor: pointer;
   }
 }
 
@@ -229,41 +213,5 @@
   }
   @media (min-width: $desktop) {
     display: none;
-  }
-}
-
-.nav-grid {
-  width: 100%;
-  height: 75vh;
-  overflow-y: auto;
-}
-
-.nav-grid__item {
-  margin-bottom: 30px;
-  @media (max-width: $tablet) {
-    height: auto;
-  }
-}
-
-.nav-grid__title {
-  position: relative;
-  margin-bottom: 48px;
-  padding-bottom: 15px;
-  font-size: 40px;
-  text-align: center;
-  color: $text-color;
-  &::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, -50%);
-    display: block;
-    width: 25px;
-    height: 2px;
-    background-color: $white;
-  }
-  @media (max-width: $tablet) {
-    margin-bottom: 30px;
   }
 }
