@@ -8,7 +8,11 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   color: $text-color;
-  background-color: $background-color;
+  background-color: $background-color; // Fallback color
+  background-image: $background-image; // Background image from _variables.scss
+  background-size: cover; // Ensure the image covers the entire viewport
+  background-position: center; // Center the image
+  background-attachment: fixed; // Keep the image fixed during scrolling
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
