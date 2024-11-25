@@ -1,16 +1,25 @@
+---
 #-------------------------------
 # General Site Settings
-baseurl: "" # The subpath of your site, e.g. /blog
-url: "" # The base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # The subpath of your site, e.g., /blog
+url: "https://sagewoodard.github.io" # Your GitHub Pages URL
 
+title: "Machine Learning and Data Science Applications | Sage Woodard"
+description: "Showcasing projects in machine learning, data science, and AI."
+
+author:
+  name: "Sage Woodard"
+  email: "sagewoodard@ksu.edu"
 
 #-------------------------------
-# Build settings
+# Build Settings
 markdown: kramdown
 permalink: /:title
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-feed # Optional: Adds an RSS feed
+  - jekyll-seo-tag # Optional: Adds SEO tags
 
 paginate: 8
 paginate_path: "/page/:num"
@@ -18,7 +27,7 @@ paginate_path: "/page/:num"
 # Pages Path
 defaults:
   - scope:
-      path: '_pages'
+      path: "_pages"
     values:
       permalink: /:basename:output_ext
 
@@ -28,3 +37,32 @@ include:
 sass:
   sass_dir: _sass
   style: compressed
+
+#-------------------------------
+# Theme-Specific Settings
+
+# Navbar links
+navbar:
+  - name: "Home"
+    href: "/"
+  - name: "Projects"
+    href: "/projects/"
+  - name: "About"
+    href: "/about/"
+  - name: "Contact"
+    href: "/contact/"
+
+# Footer links
+footer_links:
+  - name: "GitHub"
+    href: "https://github.com/sagewoodard"
+  - name: "LinkedIn"
+    href: "https://linkedin.com/in/sagewoodard"
+  - name: "Email"
+    href: "mailto:sagewoodard@ksu.edu"
+
+# Social media links
+social:
+  github: "https://github.com/sagewoodard"
+  linkedin: "https://linkedin.com/in/sagewoodard"
+  email: "sagewoodard@ksu.edu"

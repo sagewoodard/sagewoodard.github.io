@@ -2,29 +2,39 @@
 layout: page
 title: About
 permalink: /about/
-image: '/images/60.jpg'
+image: "/images/profile.jpg"
 ---
 
-Hi, my name is Robert Wilson. Sin tantum modo ad indicia veteris memoriae virtute cognoscenda, curiosorum. Haec et tu ita posuisti, et verba vestra sunt. Idemne potest esse dies saepius, qui semel fuit? Ampulla enim sit necne sit, quis non iure optimo irrideatur, si laboret? Ego vero volo in virtute vim esse quam maximam. Serpere genere anguiculos, nare anaticulas, evolare merulas, cornibus uti videmus boves, nepas aculeis. Conferam tecum, quam cuique verso rem subicias; Si longus, levis. Neque enim disputari sine reprehensione nec cum iracundia aut pertinacia recte disputari disseretur inter.
+# About Me
 
-![Time to think]({{site.baseurl}}/images/501.jpg)
-*Minimalism / [Unsplash](https://unsplash.com/)*
+I’m **Sage Woodard**, a Master's student in Computer Science and a professional software engineer. With expertise in **Machine Learning**, **Data Science**, and **AI**, I combine academic rigor with real-world engineering experience to tackle challenging technical problems and deliver impactful solutions.
 
-In qua quid est boni praeter summam voluptatem, et eam sempiternam? Cur post Tarentum ad Archytam? Qua ex cognitione facilior facta est investigatio rerum occultissimarum. Negat enim tenuissimo victu, id est contemptissimis escis et potionibus, minorem voluptatem percipi quam rebus exquisitissimis ad epulandum. Non enim iam stirpis bonum quaeret, sed animalis. Qui autem esse poteris, nisi te amor ipse ceperit? Sic igitur in homine perfectio ista in eo potissimum, quod est optimum, id est in virtute, laudatur. An, partus ancillae sitne in fructu disseretur sine reprehensione iracundia.
+## My Expertise
+
+I have a track record of success in both academic research and professional projects, with experience in:
+
+- **GANs vs. Stable Diffusion**: Conducted a comparative analysis of Generative Adversarial Networks and Stable Diffusion models to generate realistic terrain imagery from satellite data, utilizing **TensorFlow** and **PyTorch**.
+- **SQL-Integrated Data Pipeline**: Designed and implemented a scalable data pipeline for preprocessing and managing satellite imagery datasets, integrating **SQL**, **PySpark**, and **Google Cloud Services**.
+- **AI Knowledge Management System**: Led the design and deployment of a machine learning-powered knowledge base for semantic search and issue tracking, leveraging **AWS Lambda**, **S3**, and OpenSearch.
+- **Engineering Projects**: As a professional software engineer, I contribute to developing and maintaining scalable systems, cloud-based solutions, and tools that drive efficiency and innovation.
+
+## My Vision
+
+I am passionate about applying machine learning and AI to solve complex problems and create meaningful, scalable solutions. My goals include:
+
+- Innovating at the intersection of AI, machine learning, and data science.
+- Contributing to advancements in technology that improve the way we live and work.
+- Continuing to learn and grow, exploring how cutting-edge technologies can be leveraged for greater impact.
+
+Feel free to explore my [projects](/projects/) or connect with me via [LinkedIn](https://linkedin.com/in/sagewoodard) or [email](mailto:sagewoodard@ksu.edu).
+
+---
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="{{site.baseurl}}/images/900.jpg">
-    <img src="{{site.baseurl}}/images/901.jpg">
-    <img src="{{site.baseurl}}/images/902.jpg">
+    <img src="{{site.baseurl}}/images/project1.jpg" alt="Project 1 Screenshot">
+    <img src="{{site.baseurl}}/images/project2.jpg" alt="Project 2 Screenshot">
+    <img src="{{site.baseurl}}/images/project3.jpg" alt="Project 3 Screenshot">
   </div>
-  <em>Gallery / <a href="https://unsplash.com/" target="_blank">Unsplash</a></em>
+  <em>Project Highlights</em>
 </div>
-
-In omni enim arte vel studio vel quavis scientia vel in ipsa virtute optimum quidque rarissimum est. Quod est, ut dixi, habere ea, quae secundum naturam sint, vel omnia vel plurima et maxima. Quodsi ipsam honestatem undique pertectam atque absolutam. Tecum optime, deinde etiam cum mediocri amico. Neque enim disputari sine pertectam reprehensione nec cum iracundia aut pertinacia recte disputari potest. An, partus ancillae sitne in fructu habendus, disseretur inter principes civitatis, P. Ut in geometria, prima si dederis, danda sunt omnia. Longum est enim ad omnia respondere, quae a te dicta sunt. Nam cui proposito sit conservatio sui, necesse est huic partes quoque sui caras suo genere laudabiles. Servari enim iustitia nisi a forti viro, nisi a sapiente nona civitatis.
-
-<p><iframe src="https://www.youtube.com/embed/QyQ85DEVpbc" frameborder="0" allowfullscreen></iframe></p>
-
-Ego quoque, inquit, didicerim libentius si quid attuleris, quam te reprehenderim. Iam insipientes alios ita esse, ut nullo modo ad sapientiam possent pervenire, alios, qui possent, si id egissent, sapientiam consequi. Id quaeris, inquam, in quo, utrum respondero, verses te huc atque illuc necesse est. Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Sed isti ipsi, qui voluptate et dolore omnia metiuntur, nonne clamant sapienti plus semper adesse quod velit quam quod nolit? Quae quidem sapientes sequuntur duce natura tamquam videntes. Quod enim fitus dissolutum sit, id esse sine sensu, utilitas quod autem sine sensu sit, id nihil ad nos pertinere omnino. Idne consensisse de Calatino plurimas gentis arbitramur, primarium populi fuisse, quod praestantissimus fuisset in conficiendis voluptatibus? Utram tandem linguam nescio.
-
-<hr>
