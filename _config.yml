@@ -7,6 +7,8 @@ url: "https://sagewoodard.github.io" # Your GitHub Pages URL
 title: "Machine Learning and Data Science Applications | Sage Woodard"
 description: "Showcasing projects in machine learning, data science, and AI."
 
+favicon: /images/favison.png
+
 author:
   name: "Sage Woodard"
   email: "sagewoodard@ksu.edu"
