@@ -8,6 +8,7 @@ $base-spacing-unit: 20px;
 // Transition
 $global-transition: all .2s;
 
+
 // *****************
 // Color Variables
 // *****************
@@ -32,28 +33,28 @@ $callout-important: #8251e0;
 $callout-warning: #9b6800;
 $callout-caution: #cf222e;
 
+
 // *****************
 // Typography
 // *****************
-$base-font-size: 16px; // Reverted to a smaller size for better fit
+$base-font-size: 18px;
 $base-font-style: normal;
 $base-font-variant: normal;
 $base-font-weight: normal;
-$base-font-family: 'Roboto Mono', monospace; // Keep the monospaced font
-$base-line-height: 1.6;
+$base-font-family: 'Roboto Mono', monospace; // Updated to a technical monospaced font
+$base-line-height: 1.7;
 
 // Headings
 $heading-font-weight: 900;
 $heading-font-family: 'Roboto Mono', monospace; // Consistent monospaced font for headings
 $heading-color: $text-color;
 
-// Reverted heading font sizes for better layout
-$font-size-h1:  36px;
-$font-size-h2:  28px;
-$font-size-h3:  24px;
-$font-size-h4:  20px;
-$font-size-h5:  18px;
-$font-size-h6:  16px;
+$font-size-h1: 42px; // Larger size for a modern, minimalistic look
+$font-size-h2: 32px;
+$font-size-h3: 28px;
+$font-size-h4: 24px;
+$font-size-h5: 20px;
+$font-size-h6: 18px;
 
 $heading-line-height: 1.4em;
 $heading-letter-spacing: -1px;
