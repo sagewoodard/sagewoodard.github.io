@@ -47,12 +47,12 @@ $heading-font-weight: 900;
 $heading-font-family: 'Roboto Mono', monospace; // Consistent monospaced font for headings
 $heading-color: $text-color;
 
-$font-size-h1:  42px; // Larger size for a modern, minimalistic look
-$font-size-h2:  32px;
-$font-size-h3:  28px;
-$font-size-h4:  24px;
-$font-size-h5:  20px;
-$font-size-h6:  18px;
+$font-size-h1:  32px; // Reduced size for the main title
+$font-size-h2:  28px;
+$font-size-h3:  24px;
+$font-size-h4:  20px;
+$font-size-h5:  18px;
+$font-size-h6:  16px;
 
 $heading-line-height: 1.4em;
-$heading-letter-spacing: -1px;
+$heading-letter-spacing: -0.5px; // Adjusted letter spacing to improve readability
