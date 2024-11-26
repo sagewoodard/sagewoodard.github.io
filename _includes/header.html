@@ -1,12 +1,3 @@
-{% if page.id %}
-  {% assign class = '' %}
-{% elsif page.url contains 'tag' %}
-  {% assign class = '' %}
-{% else %}
-  {% assign class = 'header--top' %}
-{% endif %}
-
-<!-- begin header -->
 <header class="header {{ class }}">
   <div class="container">
     <div class="row">
@@ -33,7 +24,7 @@
           </div>
         </div>
 
-        <!-- Search Button -->
+        <!-- Navigation Buttons -->
         <div class="nav-buttons">
           <div class="search-button">
             <button class="nav__icon nav__icon-search" aria-label="Search">
@@ -47,6 +38,3 @@
     </div>
   </div>
 </header>
-<!-- end header -->
-
-{% include search.html %}
