@@ -1,3 +1,12 @@
+{% if page.id %}
+  {% assign class = '' %}
+{% elsif page.url contains 'tag' %}
+  {% assign class = '' %}
+{% else %}
+  {% assign class = 'header--top' %}
+{% endif %}
+
+<!-- begin header -->
 <header class="header {{ class }}">
   <div class="container">
     <div class="row">
@@ -17,6 +26,25 @@
           </a>
         </div>
 
+        <!-- Navigation Overlay for Mobile -->
+        <div class="menu-overlay" aria-hidden="true">
+          <nav class="main-nav">
+            <div class="main-nav__box">
+              <button class="nav__icon-close" aria-label="Close menu">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <div class="nav-grid">
+                <div class="nav-grid__item">
+                  <h2 class="nav-grid__title">Menu</h2>
+                  <div class="mobile-nav">
+                    {% include navigation.html %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
         <!-- Desktop Navigation -->
         <div class="navigation">
           <div class="top-nav">
@@ -26,6 +54,9 @@
 
         <!-- Navigation Buttons -->
         <div class="nav-buttons">
+          <button class="nav__icon nav__icon-menu" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
           <div class="search-button">
             <button class="nav__icon nav__icon-search" aria-label="Search">
               <i class="fa-solid fa-magnifying-glass"></i>
@@ -38,3 +69,6 @@
     </div>
   </div>
 </header>
+<!-- end header -->
+
+{% include search.html %}
