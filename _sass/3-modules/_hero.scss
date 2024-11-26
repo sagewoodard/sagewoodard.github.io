@@ -52,7 +52,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
   z-index: 1;
   width: 100%;
   max-width: 650px;
@@ -79,19 +79,6 @@
     font-size: 16px;
     line-height: 21px;
   }
-}
-
-/* Added Logo Styles */
-.logo-container {
-  text-align: center;
-  margin-bottom: 20px; // Space between logo and title
-}
-
-.main-logo {
-  max-width: 200px; // Adjust the logo size
-  height: auto;
-  display: block;
-  margin: 0 auto;
 }
 
 /* Hero Without Image */
