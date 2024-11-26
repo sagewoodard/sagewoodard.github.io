@@ -1,7 +1,7 @@
 /* Hero */
 .hero {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 48px; // Slightly increase spacing below the hero section
   overflow: hidden;
   background-color: $dark;
   background-image: url('/images/background.png'); // Correct background image path
@@ -22,11 +22,7 @@
     left: 0;
     right: 0;
     z-index: 1;
-    background: linear-gradient(
-      180deg,
-      rgba(15, 14, 21, 0.5) 0%,
-      $background-color 100%
-    ); /* Gradient overlay */
+    background: linear-gradient(180deg, rgba(15, 14, 21, 0.5) 0%, $background-color 100%);
   }
 }
 
@@ -35,39 +31,38 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2; /* Ensure text is above the gradient overlay */
+  z-index: 1;
   width: 100%;
   max-width: 650px;
+  padding: 20px; // Add padding to ensure content isn't cramped
   text-align: center;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent box behind text */
-  border-radius: 10px; /* Optional: rounded corners for the box */
 }
 
 .hero__title {
   font-size: 60px;
-  margin: 0 0 10px;
-  line-height: 1;
+  margin: 0 0 20px; // Add spacing below the title
+  line-height: 1.2; // Ensure title lines don’t overlap
   color: $white;
   @media only screen and (max-width: $mobile) {
     font-size: 43px;
-    margin: 0 0 5px;
+    margin: 0 0 15px; // Adjust for mobile
   }
 }
 
 .hero__desc {
   font-size: 20px;
   color: $gray;
-  margin: 0;
+  margin: 0 0 20px; // Add spacing below description
   @media only screen and (max-width: $mobile) {
     font-size: 16px;
     line-height: 21px;
+    margin: 0 0 15px; // Adjust for mobile
   }
 }
 
 /* Hero Without Image */
 .hero-without-image {
-  margin: 192px 0 96px;
+  margin: 192px 0 96px; // Add spacing above and below the hero section
   .hero-inner {
     display: flex;
     align-items: center;
@@ -80,6 +75,6 @@
     text-align: center;
   }
   @media only screen and (max-width: $mobile) {
-    margin: 144px 0 48px;
+    margin: 144px 0 48px; // Adjust spacing for mobile
   }
 }
