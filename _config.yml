@@ -4,7 +4,7 @@
 baseurl: "" # The subpath of your site, e.g., /blog
 url: "https://sagewoodard.github.io" # Your GitHub Pages URL
 
-title: "Machine Learning and Data Science Applications | Sage Woodard"
+title: "Machine Learning Applications | Sage Woodard"
 description: "Showcasing projects in machine learning, data science, and AI."
 
 favicon: /images/favison.png
