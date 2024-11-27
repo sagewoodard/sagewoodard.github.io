@@ -1,10 +1,9 @@
-/* Hero */
 .hero {
   position: relative;
-  margin-bottom: 48px; // Slightly increase spacing below the hero section
+  margin-bottom: 32px;
   overflow: hidden;
   background-color: $dark;
-  background-image: url('/images/background.png'); // Correct background image path
+  background-image: url('/images/background.png'); // Correct background path
   background-size: cover;
   background-position: center;
   @media only screen and (max-width: $mobile) {
@@ -34,47 +33,27 @@
   z-index: 1;
   width: 100%;
   max-width: 650px;
-  padding: 20px; // Add padding to ensure content isn't cramped
+  padding: 0 20px;
   text-align: center;
 }
 
 .hero__title {
   font-size: 60px;
-  margin: 0 0 20px; // Add spacing below the title
-  line-height: 1.2; // Ensure title lines don’t overlap
+  margin: 0 0 10px;
+  line-height: 1;
   color: $white;
   @media only screen and (max-width: $mobile) {
     font-size: 43px;
-    margin: 0 0 15px; // Adjust for mobile
+    margin: 0 0 5px;
   }
 }
 
 .hero__desc {
   font-size: 20px;
   color: $gray;
-  margin: 0 0 20px; // Add spacing below description
+  margin: 0;
   @media only screen and (max-width: $mobile) {
     font-size: 16px;
     line-height: 21px;
-    margin: 0 0 15px; // Adjust for mobile
-  }
-}
-
-/* Hero Without Image */
-.hero-without-image {
-  margin: 192px 0 96px; // Add spacing above and below the hero section
-  .hero-inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .hero-content {
-    width: 100%;
-    max-width: 650px;
-    padding: 0 20px;
-    text-align: center;
-  }
-  @media only screen and (max-width: $mobile) {
-    margin: 144px 0 48px; // Adjust spacing for mobile
   }
 }

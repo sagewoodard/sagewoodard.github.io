@@ -9,12 +9,14 @@ body {
   line-height: $base-line-height;
   color: $text-color;
   background-color: $background-color; // Fallback color
+  background-image: url('/images/background.png'); // Add the background image
   background-size: cover; // Ensure the image covers the entire viewport
   background-position: center; // Center the image
   background-attachment: fixed; // Keep the image fixed during scrolling
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+
   &.is-in {
     &::after {
       visibility: hidden;
@@ -22,6 +24,7 @@ body {
       pointer-events: none;
     }
   }
+
   &::after {
     content: "";
     position: fixed;
@@ -33,6 +36,7 @@ body {
     z-index: 999;
     transition: 1s;
   }
+
   input, textarea {
     border: 1px solid $light-gray;
     outline: none;
@@ -152,6 +156,7 @@ img, .lightense-wrap {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+
   &+em {
     display: inline-block;
     width: 100%;
@@ -168,6 +173,7 @@ a {
   text-decoration: none;
   color: $text-color;
   transition: $global-transition;
+
   &:hover {
     color: $brand-color;
   }
@@ -209,6 +215,7 @@ table th {
 table tr {
   background-color: $dark;
   transition: all .3s ease;
+
   &:nth-child(even) {
     background-color: transparent;
   }
@@ -226,6 +233,7 @@ table tr:hover {
 
 .gallery-box {
   margin-bottom: 30px;
+
   em {
     display: inline-block;
     width: 100%;
@@ -235,8 +243,10 @@ table tr:hover {
     line-height: 1;
     text-align: center;
     color: $text-color;
+
     a {
       border-bottom: 2px solid rgba($text-color, .1);
+
       &:hover {
         border-color: $brand-color;
         color: $text-color;
@@ -252,6 +262,7 @@ table tr:hover {
   justify-content: center;
   align-content: center;
   grid-gap: 10px;
+
   img {
     width: 100%;
     height: auto;
