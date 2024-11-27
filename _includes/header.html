@@ -15,7 +15,14 @@
         <!-- Logo -->
         <div class="logo">
           <a class="logo__link" href="{{ site.baseurl }}/">
-            <span class="logo__text">{{ site.title }}</span>
+            {% if site.data.settings.logo %}
+              <img class="logo__image" 
+                   src="{{ site.data.settings.logo | relative_url }}" 
+                   alt="{{ site.title }} Logo" 
+                   loading="lazy">
+            {% else %}
+              <span class="logo__text">{{ site.title }}</span>
+            {% endif %}
           </a>
         </div>
 
