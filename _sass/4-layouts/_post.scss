@@ -90,7 +90,7 @@
 }
 
 .post__content {
-  color: #ffffff; /* Ensure main text is white */
+  color: #ffffff; /* Main text color */
 
   a {
     border-bottom: 2px solid rgba($text-color, 0.1);
@@ -117,16 +117,16 @@
   .code-viewer {
     margin: 1.5rem 0;
     padding: 16px;
-    background: $dark;
+    background: #272822; /* Molokai background color */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow-x: auto;
 
     pre {
-      font-family: 'Courier New', monospace;
+      font-family: "Courier New", monospace;
       font-size: 14px;
       line-height: 1.5;
-      color: inherit;
+      color: #f8f8f2; /* Molokai text color */
       background: none;
       border: none;
       white-space: pre-wrap; /* Wrap long lines */
@@ -134,22 +134,30 @@
 
     code {
       display: block;
-      background: none;
-      color: inherit;
+      background-color: #272822;
+      color: #f8f8f2;
+      padding: 0.5em;
+      border-radius: 5px;
+      overflow-x: auto;
     }
 
-    /* Ensure syntax highlighting spans are visible */
-    span {
-      background: none !important;
-      color: inherit !important;
+    /* Syntax highlighting colors */
+    .keyword {
+      color: #ff79c6; /* Pink for keywords */
     }
-
-    /* Specific styles for syntax highlighting colors */
-    .keyword { color: #ff79c6; } /* Pink for keywords */
-    .string { color: #50fa7b; } /* Green for strings */
-    .comment { color: #6272a4; font-style: italic; } /* Blue-gray for comments */
-    .number { color: #bd93f9; } /* Purple for numbers */
-    .function { color: #8be9fd; } /* Light blue for functions */
+    .string {
+      color: #50fa7b; /* Green for strings */
+    }
+    .comment {
+      color: #6272a4; /* Blue-gray for comments */
+      font-style: italic;
+    }
+    .number {
+      color: #bd93f9; /* Purple for numbers */
+    }
+    .function {
+      color: #8be9fd; /* Light blue for functions */
+    }
   }
 
   h3 {
