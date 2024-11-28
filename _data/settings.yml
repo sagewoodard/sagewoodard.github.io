@@ -22,7 +22,7 @@ menu-settings:
 # Author Settings
 author:
   name: Sage Woodard
-  avatar: "/images/logo.png" # Replace with your avatar image
+  avatar: null # Replace with your avatar image
 
 #-------------------------------
 # Hero Settings
