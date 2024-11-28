@@ -16,6 +16,7 @@ author:
 #-------------------------------
 # Build Settings
 markdown: kramdown
+highlighter: rouge # Ensure syntax highlighting works
 permalink: /:title
 plugins:
   - jekyll-paginate
@@ -35,6 +36,7 @@ defaults:
 
 include:
   - _pages
+  - gan-vs-sdm-project # Add this to allow direct access to project files
 
 sass:
   sass_dir: _sass
@@ -68,3 +70,5 @@ social:
   github: "https://github.com/sagewoodard"
   linkedin: "https://linkedin.com/in/sagewoodard"
   email: "sagewoodard@ksu.edu"
+---
+
