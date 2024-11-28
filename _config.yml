@@ -18,7 +18,6 @@ author:
 safe: true
 markdown: kramdown
 highlighter: rouge # Ensure syntax highlighting works
-theme: molokai
 kramdown:
   input: GFM # Use GitHub Flavored Markdown
   syntax_highlighter: rouge # Explicitly set Rouge as the syntax highlighter
