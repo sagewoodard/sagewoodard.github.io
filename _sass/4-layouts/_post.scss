@@ -125,8 +125,8 @@
     pre {
       font-family: 'Courier New', monospace;
       font-size: 14px;
-      color: $white;
       line-height: 1.5;
+      color: inherit;
       background: none;
       border: none;
       white-space: pre-wrap; /* Wrap long lines */
@@ -134,14 +134,22 @@
 
     code {
       display: block;
-      color: $white;
       background: none;
+      color: inherit;
     }
 
+    /* Ensure syntax highlighting spans are visible */
     span {
       background: none !important;
       color: inherit !important;
     }
+
+    /* Specific styles for syntax highlighting colors */
+    .keyword { color: #ff79c6; } /* Pink for keywords */
+    .string { color: #50fa7b; } /* Green for strings */
+    .comment { color: #6272a4; font-style: italic; } /* Blue-gray for comments */
+    .number { color: #bd93f9; } /* Purple for numbers */
+    .function { color: #8be9fd; } /* Light blue for functions */
   }
 
   h3 {
