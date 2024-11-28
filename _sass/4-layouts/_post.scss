@@ -130,22 +130,25 @@
       background: none;
       border: none;
       white-space: pre-wrap; /* Wrap long lines */
+      text-shadow: none !important; /* Ensure solid text */
     }
 
     code {
       display: block;
       background-color: #272822;
-      color: #f8f8f2;
+      color: #f8f8f2 !important;
       padding: 0.5em;
       border-radius: 5px;
       overflow-x: auto;
-      box-shadow: none !important; /* Remove any box shadows on inline elements */
+      box-shadow: none !important; /* Remove shadows on inline elements */
+      text-shadow: none !important; /* Ensure solid text */
     }
 
     /* Ensure syntax highlighting colors override unwanted styling */
     span {
       background: none !important; /* Remove background colors */
       box-shadow: none !important; /* Remove box shadows */
+      text-shadow: none !important; /* Ensure solid text */
     }
 
     /* Syntax highlighting colors */
@@ -164,6 +167,13 @@
     }
     .function {
       color: #8be9fd; /* Light blue for functions */
+    }
+
+    /* Specific fix for equal sign gray box */
+    .operator {
+      background: none !important; /* Remove background */
+      box-shadow: none !important; /* Remove shadow */
+      color: inherit !important; /* Use default text color */
     }
   }
 
