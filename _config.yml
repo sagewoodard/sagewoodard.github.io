@@ -18,6 +18,10 @@ author:
 safe: true
 markdown: kramdown
 highlighter: rouge # Ensure syntax highlighting works
+kramdown:
+  input: GFM # Use GitHub Flavored Markdown
+  syntax_highlighter: rouge # Explicitly set Rouge as the syntax highlighter
+
 permalink: /:title
 plugins:
   - jekyll-paginate
@@ -29,17 +33,12 @@ plugins:
 paginate: 8
 paginate_path: "/page/:num"
 
-# Pages Path
-defaults:
-  - scope:
-      path: "_pages"
-    values:
-      permalink: /:basename:output_ext
-
+# Include files and paths
 include:
   - _pages
   - gan-vs-sdm-project # Add this to allow direct access to project files
 
+# Sass settings for CSS
 sass:
   sass_dir: _sass
   style: compressed
