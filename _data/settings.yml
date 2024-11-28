@@ -2,7 +2,7 @@
 #-------------------------------
 # Site Settings
 title: Machine Learning and Data Science Applications | Sage Woodard
-logo: # You can add your own logo. For example '/images/logo.png'.
+logo: null # You can add your own logo. For example '/images/logo.png'.
 description: Developing machine learning applications that transform data into actionable insights, solve complex problems, and drive meaningful change.
 
 #-------------------------------
