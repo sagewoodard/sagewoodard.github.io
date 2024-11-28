@@ -17,31 +17,41 @@ author:
 # Build Settings
 safe: true
 markdown: kramdown
-highlighter: rouge # Ensure syntax highlighting works
-kramdown:
-  input: GFM # Use GitHub Flavored Markdown
-  syntax_highlighter: rouge # Explicitly set Rouge as the syntax highlighter
-
+highlighter: rouge # Ensures syntax highlighting works
 permalink: /:title
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-feed # Optional: Adds an RSS feed
-  - jekyll-seo-tag # Optional: Adds SEO tags
-  - kramdown-parser-gfm # Ensure compatibility with GitHub Flavored Markdown
+  - jekyll-feed # Adds an RSS feed
+  - jekyll-seo-tag # Adds SEO tags
+  - kramdown-parser-gfm # Ensures compatibility with GitHub Flavored Markdown
 
 paginate: 8
 paginate_path: "/page/:num"
 
-# Include files and paths
+# Pages Path
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      permalink: /:basename:output_ext
+
 include:
   - _pages
   - gan-vs-sdm-project # Add this to allow direct access to project files
 
-# Sass settings for CSS
 sass:
   sass_dir: _sass
   style: compressed
+
+#-------------------------------
+# Syntax Highlighting
+kramdown:
+  input: GFM # GitHub Flavored Markdown
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: "highlight" # Ensure consistent highlighting styles
+    line_numbers: false # Optional: Enable line numbers if desired
 
 #-------------------------------
 # Theme-Specific Settings
@@ -71,5 +81,4 @@ social:
   github: "https://github.com/sagewoodard"
   linkedin: "https://linkedin.com/in/sagewoodard"
   email: "sagewoodard@ksu.edu"
----
-
+#-------------------------------
