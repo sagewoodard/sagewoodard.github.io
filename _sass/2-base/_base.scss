@@ -53,9 +53,9 @@ body {
   background-color: rgba($brand-color, 0.7);
 }
 
+/* General headings */
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -63,7 +63,7 @@ h6 {
   font-weight: $heading-font-weight;
   line-height: $heading-line-height;
   letter-spacing: $heading-letter-spacing;
-  color: #d679d7 !important; /* Light purple color for all subheadings */
+  color: $heading-color;
 }
 
 h1 {
@@ -72,10 +72,6 @@ h1 {
 
 h2 {
   font-size: $font-size-h2;
-}
-
-h3 {
-  font-size: $font-size-h3;
 }
 
 h4 {
@@ -90,6 +86,15 @@ h6 {
   font-size: $font-size-h6;
 }
 
+/* Target subheading (h3) specifically before paragraphs */
+h3 {
+  font-size: $font-size-h3;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #d679d7; /* Light purple color for subheadings */
+}
+
+/* Blockquotes */
 blockquote {
   position: relative;
   padding: 34px 20px 34px 64px;
