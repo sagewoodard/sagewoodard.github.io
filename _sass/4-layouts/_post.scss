@@ -126,19 +126,21 @@
       font-family: "Courier New", monospace;
       font-size: 14px;
       line-height: 1.5;
-      color: #f8f8f2; /* Molokai text color */
+      color: #f8f8f2 !important; /* Ensure consistent Molokai text color */
       background: none;
       border: none;
       white-space: pre-wrap; /* Wrap long lines */
+      text-shadow: none !important; /* Eliminate shadow effects */
     }
 
     code {
       display: block;
       background-color: #272822;
-      color: #f8f8f2;
+      color: #f8f8f2 !important;
       padding: 0.5em;
       border-radius: 5px;
       overflow-x: auto;
+      text-shadow: none !important; /* Eliminate shadow effects */
     }
 
     /* Syntax highlighting colors */
