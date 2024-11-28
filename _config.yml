@@ -7,7 +7,7 @@ url: "https://sagewoodard.github.io" # Your GitHub Pages URL
 title: "Machine Learning Applications | Sage Woodard"
 description: "Showcasing projects in machine learning, data science, and AI."
 
-favicon: /images/favison.png
+favicon: /images/favicon.png
 
 author:
   name: "Sage Woodard"
@@ -24,6 +24,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed # Optional: Adds an RSS feed
   - jekyll-seo-tag # Optional: Adds SEO tags
+  - kramdown-parser-gfm # Ensure compatibility with GitHub Flavored Markdown
 
 paginate: 8
 paginate_path: "/page/:num"
