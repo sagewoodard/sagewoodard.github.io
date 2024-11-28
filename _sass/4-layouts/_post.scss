@@ -139,11 +139,13 @@
       padding: 0.5em;
       border-radius: 5px;
       overflow-x: auto;
+      box-shadow: none !important; /* Remove any box shadows on inline elements */
     }
 
-    /* Fix for equal signs */
-    .o {
-      background: none !important; /* Remove gray background on operators like "=" */
+    /* Ensure syntax highlighting colors override unwanted styling */
+    span {
+      background: none !important; /* Remove background colors */
+      box-shadow: none !important; /* Remove box shadows */
     }
 
     /* Syntax highlighting colors */
