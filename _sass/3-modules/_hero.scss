@@ -1,12 +1,12 @@
 /* Hero */
 .hero {
   position: relative;
-  margin-bottom: 16px;  // Reduced margin-bottom to make the hero section less tall.
+  margin-bottom: 32px;  // Reduced margin-bottom to make the hero section less tall.
   overflow: hidden;
   background-color: $dark; // Fallback for when the image is not loaded
 
   .hero__image {
-    min-height: 500px;  // Reduce the height for a more compact hero section
+    min-height: 400px;  // Reduce the height for a more compact hero section
     user-select: none;
     background-color: $dark; // Fallback background color
     background-image: $background-image; // Reference the background image variable
@@ -19,15 +19,15 @@
     }
 
     @media only screen and (max-width: $desktop) {
-      min-height: 450px;  // Adjust height for smaller screens
+      min-height: 380px;  // Adjust height for smaller screens
     }
 
     @media only screen and (max-width: $tablet) {
-      min-height: 350px;  // Adjust height for tablet devices
+      min-height: 320px;  // Adjust height for tablet devices
     }
 
     @media only screen and (max-width: $mobile) {
-      min-height: 250px;  // Reduce the height for mobile screens
+      min-height: 240px;  // Reduce the height for mobile screens
     }
   }
 
@@ -57,7 +57,7 @@
     }
 
     .hero__desc {
-      font-size: 20px; // Adjusted description size
+      font-size: 18px; // Adjusted description size
       color: $light-gray; // Change the font color to light gray for better visibility
       margin: 0 auto;
       max-width: 600px; // Constrain width for better layout
