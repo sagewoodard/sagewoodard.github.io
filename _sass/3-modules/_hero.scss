@@ -1,12 +1,12 @@
 /* Hero */
 .hero {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 16px;  // Reduced margin-bottom to make the hero section less tall.
   overflow: hidden;
   background-color: $dark; // Fallback for when the image is not loaded
 
   .hero__image {
-    min-height: 664px;
+    min-height: 500px;  // Reduce the height for a more compact hero section
     user-select: none;
     background-color: $dark; // Fallback background color
     background-image: $background-image; // Reference the background image variable
@@ -19,15 +19,15 @@
     }
 
     @media only screen and (max-width: $desktop) {
-      min-height: 620px;
+      min-height: 450px;  // Adjust height for smaller screens
     }
 
     @media only screen and (max-width: $tablet) {
-      min-height: 500px;
+      min-height: 350px;  // Adjust height for tablet devices
     }
 
     @media only screen and (max-width: $mobile) {
-      min-height: 400px;
+      min-height: 250px;  // Reduce the height for mobile screens
     }
   }
 
@@ -44,20 +44,20 @@
     color: $white; // Ensure text visibility
 
     .hero__title {
-      font-size: 60px; // Large font for visual impact
-      margin-bottom: 20px; // Space below the title
+      font-size: 50px;  // Adjusted size for a smaller hero title
+      margin-bottom: 10px; // Reduced space below the title
       line-height: 1.2;
       color: $white;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); // Subtle shadow for contrast
 
       @media only screen and (max-width: $mobile) {
-        font-size: 43px;
-        margin-bottom: 10px;
+        font-size: 35px; // Slightly smaller on mobile
+        margin-bottom: 5px; // Reduced space below title
       }
     }
 
     .hero__desc {
-      font-size: 22px; // Keep font size for readability
+      font-size: 20px; // Adjusted description size
       color: $light-gray; // Change the font color to light gray for better visibility
       margin: 0 auto;
       max-width: 600px; // Constrain width for better layout
@@ -66,8 +66,8 @@
       padding: 10px 15px; // Add padding if using a background
       border-radius: 8px; // Round the corners of the background
       @media only screen and (max-width: $mobile) {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 16px; // Smaller font on mobile
+        line-height: 20px;
       }
     }
   }
@@ -87,7 +87,7 @@
 
 /* Hero Without Image */
 .hero-without-image {
-  margin: 192px 0 96px;
+  margin: 120px 0 48px; // Adjusted the margin to reduce space for no-image heroes
 
   .hero-inner {
     display: flex;
@@ -103,6 +103,6 @@
   }
 
   @media only screen and (max-width: $mobile) {
-    margin: 144px 0 48px;
+    margin: 100px 0 32px;  // Adjusted for smaller devices
   }
 }
