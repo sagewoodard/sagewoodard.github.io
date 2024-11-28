@@ -270,3 +270,16 @@ table tr:hover {
 .lightense-backdrop {
   background-color: $background-color !important;
 }
+
+iframe {
+  border: 1px solid $light-gray; // Matches your site's light gray theme
+  border-radius: 8px; // Rounded corners for a clean, modern look
+  margin: $base-spacing-unit 0; // Vertical spacing
+  width: 100%; // Ensures iframe takes up the full container width
+  height: 600px; // Default height
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Adds a subtle shadow
+}
+
+iframe:hover {
+  border-color: $gray; // Changes border color on hover
+}

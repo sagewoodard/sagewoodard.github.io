@@ -458,3 +458,23 @@
     padding: 48px 32px;
   }
 }
+
+iframe {
+  border: 1px solid #ccc; /* Optional border for better visibility */
+  border-radius: 8px; /* Rounded corners */
+  margin: 1rem 0; /* Space above and below the iframe */
+  width: 100%; /* Full width of the container */
+  height: 600px; /* Default height */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+}
+
+iframe:hover {
+  border-color: #999; /* Highlight border on hover */
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: $tablet) {
+  iframe {
+    height: 400px; /* Reduce height on smaller screens */
+  }
+}
