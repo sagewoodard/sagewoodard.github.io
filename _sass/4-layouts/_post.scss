@@ -177,22 +177,17 @@
     }
   }
 
-  /* Global Subheading Styles (h3, h4, h5) */
-  h3, h4, h5 {
+  /* Global Subheading Styles (h2, h3, h4, h5) */
+  h2, h3, h4, h5, h6 {
     color: #d679d7; /* Light Purple Subheading color */
-    margin-top: 50px; /* Adjust margin-top for subheadings */
-    margin-bottom: 20px; /* Adjust margin-bottom for spacing */
+    margin-top: 30px; /* Adjust margin-top for subheadings */
+    margin-bottom: 15px; /* Adjust margin-bottom for spacing */
     line-height: 1.5;
   }
 
   @media (max-width: $tablet) {
     iframe {
       height: 400px;
-    }
-
-    h3 {
-      margin-top: 30px;
-      margin-bottom: 15px;
     }
 
     .code-viewer {
