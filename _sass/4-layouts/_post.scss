@@ -114,6 +114,29 @@
     border-color: #999;
   }
 
+  .code-viewer {
+    margin: 1.5rem 0;
+    padding: 16px;
+    background: $dark;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+
+    pre {
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      color: $white;
+      line-height: 1.5;
+      background: none;
+      border: none;
+    }
+
+    code {
+      display: block;
+      white-space: pre-wrap; /* Wrap long lines */
+    }
+  }
+
   h3 {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -130,6 +153,11 @@
     h3 {
       margin-top: 30px;
       margin-bottom: 15px;
+    }
+
+    .code-viewer {
+      padding: 12px;
+      font-size: 12px; /* Smaller font size for smaller screens */
     }
   }
 }
