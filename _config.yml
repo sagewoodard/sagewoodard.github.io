@@ -15,6 +15,7 @@ author:
 
 #-------------------------------
 # Build Settings
+safe: true
 markdown: kramdown
 highlighter: rouge # Ensure syntax highlighting works
 permalink: /:title
