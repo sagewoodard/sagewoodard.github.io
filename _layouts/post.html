@@ -25,11 +25,6 @@ layout: default
 
           <div class="post__bottom">
 
-            <div class="post__author">
-              <a href="{{ '/about/' | relative_url }}" aria-label="{{ site.data.settings.author.name }}"><img class="post__author-image"
-                  src="{{ site.data.settings.author.avatar | relative_url }}" alt="{{ site.data.settings.author.name }}'s Picture"></a>
-            </div>
-
             <div class="post__bottom-meta">
               <a href="{{ '/about/' | relative_url }}" class="post__author-link">{{ site.data.settings.author.name }}</a>
               {% if page.tags.size >= 1 %}
@@ -49,10 +44,33 @@ layout: default
   </div>
 </div>
 
-<!-- begin post -->
+<!-- Begin Post Section with Hero Image -->
 <div class="container">
   <article class="post animate">
 
+    <!-- Hero Section -->
+    {% if page.image %}
+      <section class="hero">
+        <div class="hero__inner">
+          <div class="hero__image" style="background-image: url('{{ page.image | relative_url }}');">
+            <img class="lazy" data-src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+          </div>
+          <div class="hero__content">
+            <h1 class="hero__title">{{ page.title }}</h1>
+          </div>
+        </div>
+      </section>
+    {% else %}
+      <section class="hero-without-image">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <h1 class="hero__title">{{ page.title }}</h1>
+          </div>
+        </div>
+      </section>
+    {% endif %}
+
+    <!-- Post Content -->
     <div class="post__content">
       {{ content }}
     </div>
@@ -78,6 +96,7 @@ layout: default
       </div>
     </div>
 
+    <!-- Post Navigation (Next and Previous Links) -->
     <div class="post__navigation">
       {% if page.previous.url %}
       <a class="prev" href="{{ page.previous.url | relative_url }}">
@@ -101,7 +120,7 @@ layout: default
 
   </article>
 </div>
-<!-- end post -->
+<!-- End Post Section -->
 
 {% include related-posts.html %}
 
