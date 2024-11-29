@@ -31,13 +31,13 @@ layout: default
             <!-- Removed the link and author image from here -->
 
             <div class="post__bottom-meta">
+              <a href="{{ '/about/' | relative_url }}" class="post__author-link">{{ site.data.settings.author.name }}</a>
               {% if page.tags.size >= 1 %}
-              <span>in</span>
-              <span class="post-tags">
-                {% for tag in page.tags %}
-                <a href="{{ site.baseurl }}/tags/?tag={{ tag | downcase | url_encode }}" class="post__tag">{{ tag }}</a>
-                {% endfor %}
-              </span>
+                <span class="post-tags">
+                  {% for tag in page.tags %}
+                    <a href="{{ site.baseurl }}/tags/?tag={{ tag | downcase | url_encode }}" class="post__tag">{{ tag }}</a>
+                  {% endfor %}
+                </span>
               {% endif %}
             </div>
           </div>
@@ -103,3 +103,35 @@ layout: default
 {% if site.data.settings.disqus-identifier %}
   {% include disqus-comments.html %}
 {% endif %}
+
+<style>
+  /* CSS Fix for Social Media Links */
+  .post__share {
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    margin-top: 20px; /* Add spacing above the social links */
+  }
+
+  .share__list {
+    display: flex;
+    gap: 15px; /* Space between the icons */
+  }
+
+  .share__link {
+    font-size: 18px; /* Icon size */
+    color: #000;
+    transition: color 0.3s;
+  }
+
+  .share__link:hover {
+    color: #ffffff; /* LinkedIn color on hover */
+  }
+
+  .share__linkedin {
+    color: #ffffff; /* LinkedIn color */
+  }
+
+  .share__github {
+    color: #ffffff; /* GitHub color */
+  }
+</style>
