@@ -27,16 +27,10 @@ layout: default
           <h2 class="post__title">{{ page.title }}</h2>
 
           <div class="post__bottom">
-            <!-- Post author and avatar -->
-            <div class="post__author">
-              <a href="{{ '/about/' | relative_url }}" aria-label="{{ site.data.settings.author.name }}">
-                <img class="post__author-image" src="{{ site.data.settings.author.avatar | relative_url }}" alt="{{ site.data.settings.author.name }}'s Picture">
-              </a>
-            </div>
+            <!-- Removed Author Profile Link -->
+            <!-- Removed the link and author image from here -->
 
-            <!-- Author and tags meta info -->
             <div class="post__bottom-meta">
-              <a href="{{ '/about/' | relative_url }}" class="post__author-link">{{ site.data.settings.author.name }}</a>
               {% if page.tags.size >= 1 %}
               <span>in</span>
               <span class="post-tags">
@@ -65,7 +59,7 @@ layout: default
 </div>
 <!-- End Post Content -->
 
-<!-- Social Share Section -->
+<!-- Social Share Section (Corrected Alignment) -->
 <div class="post__share">
   <div class="share__list">
     <!-- LinkedIn Share -->
