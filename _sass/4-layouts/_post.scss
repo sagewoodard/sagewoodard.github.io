@@ -271,3 +271,13 @@
     }
   }
 }
+
+.post__share {
+  margin-right: 20px; /* Add right margin to separate from the edge */
+  margin-bottom: 10px; /* Optional: Adds some space between the social links and content */
+  .share__list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px; /* Optional: Adds spacing between the social media icons */
+  }
+}
